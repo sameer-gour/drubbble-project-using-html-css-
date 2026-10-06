@@ -8,26 +8,28 @@
 html,
 body {
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
 }
 
 .page1 {
     width: 100%;
-    min-height: 100%;
+    height: 100%;
 }
 
 
 
 .nav {
     width: 100%;
-    height: 80px;
+    height: 8vh;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     padding: 30px;
+    background-color: red;
 }
+
 
 .nav .left {
     width: 30%;
@@ -38,6 +40,9 @@ body {
     text-transform: capitalize;
 }
 
+#hambuger{
+    display: none;
+}
 .nav .right {
     width: 30%;
 
@@ -369,4 +374,300 @@ margin: 25px;
 .btn-hiring:hover {
     background-color: #17172e;
     color: white;
+}
+
+
+@media (max-width: 768px) {
+    
+  
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.page1{
+    
+    height:70vh;
+}
+
+.nav {
+    
+    height: 5vh;
+
+
+    padding: .2rem;
+    
+}
+
+.nav .left {
+    display: none;
+    justify-content: center;
+    
+    
+}
+#hambuger{
+    display: initial;
+}
+
+.right button,
+.content button {
+     padding: .2rem;
+    
+    border-radius: 10px;
+
+    
+    
+
+    font-size: .7rem;
+    
+
+
+}
+
+.right button {
+    margin: .2rem;
+}
+
+#land{
+    width: 5rem;
+}
+.nav .left #hambuger{
+    display: initial;
+    background-color: #17172e;
+}
+
+
+.content {
+    width: 100vw;
+    height: 40vh;
+
+    padding-top: 1.5rem;
+
+    text-align: center;
+    padding: .64rem;
+    
+}
+
+.content h3 {
+    
+    width:80%;
+    font-size: .9rem;
+
+    margin: 1rem auto;
+    padding: .5rem;
+
+    border-radius: .2rem;
+    
+}
+
+
+
+.content h1 {
+    font-size: 2rem;
+
+}
+
+.content button {
+    margin-top: 1rem;
+    
+}
+
+.content button:hover {
+    background-color:black;
+    color: azure;
+    /* border: 2px solid black; */
+    
+}
+
+
+.nav .right button:hover:first-child{
+        background-color: black;
+        color:white;
+
+}
+
+
+.nav .right button:hover:nth-child(2){
+        background-color:black;
+        color: white;
+        border: 2px solid black;
+
+}
+
+
+
+.crosul {
+    width: 100%;
+    height: 40%;
+
+    
+    gap: .8rem;
+
+    padding: .5rem;
+    
+}
+
+
+.crosul .elem {
+    width: 7.5rem;
+    height: 10rem;
+
+    
+}
+
+.crosul .elem img,
+.crosul .elem video {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+}
+
+
+
+.elem h3 {
+    font-size: .9rem;
+
+    
+
+    
+}
+
+.elem h3 {
+    bottom: 2rem;
+}
+
+.elem p {
+    bottom: .2rem;
+    font-size: .5rem;
+}
+
+
+
+.page2 {
+    
+    
+    padding:0;
+    
+    
+    
+}
+
+.page2 h1{
+    
+    font-size: 1.5rem;
+    
+    
+    padding-top: 2rem;
+    
+    
+}
+
+
+.page2 .box{
+    
+    width: 10rem;
+    height: 10rem;
+    
+display: inline-block;
+margin: 1rem;
+
+    
+}
+
+
+.page3 {
+    
+    width: 100vw;
+    height: 40vh;
+
+    background-color: #ffdf83;
+
+    display: block;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.line1 {
+    width: 100%;
+    background-color: #17172e;
+    width:2rem;
+
+    display: block;
+    flex-direction: ;
+    align-items: center;
+}
+
+.line1 h1 {
+    font-family: Georgia, serif;
+    font-size: 1rem;
+    /* line-height: ; */
+    font-weight: 400;
+
+    margin-bottom: 0;
+}
+
+.line1 p {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 0;
+
+    margin-bottom: 0;
+}
+
+.buttons {
+    display: flex;
+    gap: 0;
+    margin-bottom: 0;
+}
+
+.buttons button {
+    border: none;
+    padding: 20px 30px;
+
+    border-radius: 40px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.btn-start {
+    background-color: #17172e;
+    color: white;
+}
+
+.btn-hiring {
+    background-color: white;
+    color: #17172e;
+}
+
+.designer {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+.designer a {
+    color: #17172e;
+    font-weight: bold;
+}
+
+
+.btn-start:hover{
+    background-color: white;
+    color: #17172e;
+}
+
+.btn-hiring:hover {
+    background-color: #17172e;
+    color: white;
+}
+
+
 }
